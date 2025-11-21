@@ -1,6 +1,6 @@
 {
   "name": "@athenna/sentry",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Sentry plugin for Athenna Framework.",
   "license": "MIT",
   "author": "João Lenon <lenon@athenna.io>",
