@@ -1,5 +1,5 @@
 /**
- * @athenna/template
+ * @athenna/sentry
  *
  * (c) João Lenon <lenon@athenna.io>
  *
@@ -7,4 +7,5 @@
  * file that was distributed with this source code.
  */
 
-export * from '#src/bootstrap/Bootstrap'
+export * from '#src/instruments/Init'
+export * from '#src/providers/SentryProvider'

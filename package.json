@@ -1,12 +1,12 @@
 {
-  "name": "@athenna/template",
+  "name": "@athenna/sentry",
   "version": "5.0.0",
-  "description": "Template for new projects.",
+  "description": "Sentry plugin for Athenna Framework.",
   "license": "MIT",
   "author": "João Lenon <lenon@athenna.io>",
-  "bugs": "https://github.com/AthennaIO/Template/issues",
-  "repository": "https://github.com/AthennaIO/Template.git",
-  "homepage": "https://github.com/AthennaIO/Template#readme",
+  "bugs": "https://github.com/AthennaIO/Sentry/issues",
+  "repository": "https://github.com/AthennaIO/Sentry.git",
+  "homepage": "https://github.com/AthennaIO/Sentry#readme",
   "keywords": [
     "esm",
     "athenna"
@@ -37,7 +37,9 @@
     "./types": "./src/types/index.js",
     "./package": "./package.json",
     "./package.json": "./package.json",
-    "./testing/plugins": "./src/testing/plugins/index.js"
+    "./init": "./src/instruments/init.js",
+    "./testing/plugins": "./src/testing/plugins/index.js",
+    "./providers/SentryProvider": "./src/providers/SentryProvider.js"
   },
   "imports": {
     "#bin/*": "./bin/*.js",
@@ -49,9 +51,14 @@
     "#tests/*": "./tests/*.js",
     "#tests": "./tests/index.js"
   },
+  "dependencies": {
+    "@sentry/node": "^10.26.0"
+  },
   "devDependencies": {
-    "@athenna/common": "^5.17.0",
-    "@athenna/test": "^5.5.0",
+    "@athenna/common": "^5.26.0",
+    "@athenna/config": "^5.5.0",
+    "@athenna/ioc": "^5.2.0",
+    "@athenna/test": "^5.6.0",
     "@athenna/tsconfig": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
