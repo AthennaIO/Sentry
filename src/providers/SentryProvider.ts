@@ -7,8 +7,7 @@
  * file that was distributed with this source code.
  */
 
-import Sentry from '@sentry/node'
-
+import { Sentry } from '#src/sentry'
 import { Config } from '@athenna/config'
 import { ServiceProvider } from '@athenna/ioc'
 

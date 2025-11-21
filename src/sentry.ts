@@ -7,6 +7,6 @@
  * file that was distributed with this source code.
  */
 
-export * from '#src/sentry'
-export * from '#src/instruments/Init'
-export * from '#src/providers/SentryProvider'
+import * as Sentry from '@sentry/node'
+
+export { Sentry }
